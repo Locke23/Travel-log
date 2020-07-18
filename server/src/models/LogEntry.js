@@ -31,12 +31,12 @@ const logEntrySchema = new Schema({
     min: -180,
     max: 180,
   },
-}, {
-  timestamps: true,
   visitDate: {
     required: true,
     type: Date,
   },
+}, {
+  timestamps: true,
 });
 
 const LogEntry = mongoose.model('LogEntry', logEntrySchema);
